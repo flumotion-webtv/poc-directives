@@ -10,6 +10,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://docs.angularjs.org/css/prettify-theme.css">
+  <style>
+    ul {
+      font-size: 19px;
+    }
+  </style>
 </head>
 <body ng-app="fmt">
   <!--[if lt IE 7]>
@@ -22,26 +28,35 @@
   <![endif]-->
 
   <div class="container">
-    <h1 class="page-header"><a href="https://angularjs.org/" target="_blank">AngularJS</a> directives for WebTV's</h1>
-    <p class="lead">
-      Directives are markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell
-      AngularJS's HTML compiler to attach a specified behavior to that DOM element or even transform the DOM element and
-      its children.
-      <br>More info <a href="https://docs.angularjs.org/guide/directive" target="_blank">here</a>.
-    </p>
-    <p class="lead">
-      Benefits:
-      <ul style="font-size: 17px;">
-        <li>Easy way to embed code with no iFrames required.</li>
-        <li>Enable SEO thanks to <a
+    <h1 class="page-header"><a href="https://docs.angularjs.org/guide/directive" target="_blank">AngularJS directives</a> for OVP's</h1>
+    <p>
+      <ul>
+        <li>Enable <strong>SEO</strong> with <a
             href="https://developers.google.com/webmasters/ajax-crawling/docs/specification?csw=1"
             target="_blank">AJAX crawling</a>.</li>
-        <li>Communication between different directives.</li>
-        <li>Markup externalized as templates, so you can customize directive's markup at will.</li>
-        <li>Documentation available using ngDocs: <a href="http://flumotion-webtv.github.io/angular-fmt-docs/#/api/fmt.directive:fmtPlayer" target="_blank">fmt-player</a> (work in progress).</li>
+        <li><strong>Communication</strong> between directives on a transparent way.</li>
+        <li>Manage <strong>different players</strong> with the same wrapper.</li>
+        <li>Different devices and formats including <a href="http://dashif.org/mpeg-dash/" target="_blank">MPEG-DASH</a> support.</li>
+        <li>No iFrames required.</li>
+        <li>No code changes on client's site to use a new release.</li>
+        <li>Markup externalized as templates, so you can <strong>customize</strong> directive's markup at will.</li>
+        <li><a href="http://flumotion-webtv.github.io/angular-fmt-docs/#/api/fmt.directive:fmtPlayer" target="_blank">Documentation</a> with ngDocs. (work in progress).</li>
       </ul>
     </p>
-    <h3 class="page-header">PoC communication between directives:</h3>
+    <h3 class="page-header">Code to embed a player, addthis and playlist using default configurations:</h3>
+    <pre class="ng-scope"><code class="lang-html"><span class="com">&lt;!-- Player wrapper --&gt;</span>
+<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">fmt-player</span><span class="tag">&gt;&lt;/div&gt;</span>
+<span class="com">&lt;!-- Social sharing --&gt;</span>
+<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">fmt-addthis</span><span class="tag">&gt;&lt;/div&gt;</span>
+<span class="com">&lt;!-- Playlist synchronized with player and social sharing --&gt;</span>
+<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">fmt-playlist</span> <span class="atn">content</span><span
+          class="pun">=</span><span class="atv">"http://flumotion-webtv.github.io/poc-directives/fixtures/playlist.json"</span><span class="tag">&gt;&lt;/div&gt;</span>
+
+<span class="com">&lt;!-- Initialize AngularJS and directives bootstrap --&gt;</span>
+<span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+<span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+<span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://flumotion-webtv.github.io/poc-directives/fmt-tpls.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span></code></pre>
+    <h3 class="page-header">Example:</h3>
     <div class="row">
       <div class="col-md-6">
         <div fmt-player

@@ -1,6 +1,20 @@
 [
   {
     "id": "1",
+    "name": "Manifest.mpd (DASH)",
+    "description": "Fusce placerat metus at purus ornare, et gravida libero pretium. Mauris lacinia, tellus at egestas congue, urna sem commodo elit, gravida posuere lacus lectus vitae enim. Aliquam bibendum mi feugiat, suscipit tellus sit amet, gravida arcu.",
+    "duration": "260",
+    "total_rates": "999",
+    "created_on": "2013-10-08 10:57:52",
+    "streams": [
+      {
+        "url": "http://dashdemo.edgesuite.net/envivio/dashpr/clear/Manifest.mpd",
+        "mimetype": "application/dash+xml"
+      }
+    ]
+  },
+  {
+    "id": "2",
     "name": "Oceans (MP4, WebM)",
     "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     "type": "video",
@@ -20,7 +34,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "3",
     "name": "bird_low (MP4)",
     "description": "Fusce placerat metus at purus ornare, et gravida libero pretium. Mauris lacinia, tellus at egestas congue, urna sem commodo elit, gravida posuere lacus lectus vitae enim. Aliquam bibendum mi feugiat, suscipit tellus sit amet, gravida arcu.",
     "duration": "29",
@@ -34,7 +48,7 @@
     ]
   },
   {
-    "id": "3",
+    "id": "4",
     "name": "Blender trailer (MP4)",
     "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     "type": "video",
@@ -46,21 +60,6 @@
       {
         "url": "http://media.w3.org/2010/05/sintel/trailer.mp4",
         "mimetype": "video/mp4"
-      }
-    ]
-  },
-  {
-    "id": "4",
-    "name": "AFaerysTale_sylviaApostol_640_500_short (FLV)",
-    "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
-    "type": "video",
-    "duration": "200",
-    "total_rates": "999",
-    "created_on": "2013-10-08 10:57:52",
-    "streams": [
-      {
-        "url": "http://mediapm.edgesuite.net/strobe/content/test/AFaerysTale_sylviaApostol_640_500_short.flv",
-        "mimetype": "video/flv"
       }
     ]
   },
