@@ -1,81 +1,34 @@
 [
   {
     "id": "1",
-    "name": "20120802-manifest.mpd - no audio (DASH)",
-    "description": "Fusce placerat metus at purus ornare, et gravida libero pretium. Mauris lacinia, tellus at egestas congue, urna sem commodo elit, gravida posuere lacus lectus vitae enim. Aliquam bibendum mi feugiat, suscipit tellus sit amet, gravida arcu.",
-    "duration": "260",
-    "total_rates": "999",
-    "created_on": "2014-05-11 10:57:52",
-    "streams": [
-      {
-        "url": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/oops-20120802-manifest.mpd",
-        "mimetype": "application/dash+xml"
-      }
-    ]
+    "name": "car-20120827 (DASH)",
+    "likes": 999,
+    "duration": 181,
+    "thumbnail_url": "fixtures/thumb1.png",
+    "manifest": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/car-20120827-manifest.mpd"
   },
   {
     "id": "2",
-    "name": "Oceans (MP4, WebM)",
-    "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
-    "type": "video",
-    "duration": "46",
-    "total_rates": "999",
-    "created_on": "2013-10-08 10:57:52",
-    "posterUrl": "http://www.videojs.com/img/poster.jpg",
-    "streams": [
-      {
-        "url": "http://vjs.zencdn.net/v/oceans.mp4",
-        "mimetype": "video/mp4"
-      },
-      {
-        "url": "http://vjs.zencdn.net/v/oceans.webm",
-        "mimetype": "video/webm"
-      }
-    ]
+    "name": "feelings_vp9 (DASH)",
+    "likes": 999,
+    "duration": 80,
+    "thumbnail_url": "fixtures/thumb2.png",
+    "manifest": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/feelings_vp9-20130806-manifest.mpd"
   },
   {
     "id": "3",
-    "name": "bird_low (MP4)",
-    "description": "Fusce placerat metus at purus ornare, et gravida libero pretium. Mauris lacinia, tellus at egestas congue, urna sem commodo elit, gravida posuere lacus lectus vitae enim. Aliquam bibendum mi feugiat, suscipit tellus sit amet, gravida arcu.",
-    "duration": "29",
-    "total_rates": "999",
-    "created_on": "2013-10-08 10:57:52",
-    "streams": [
-      {
-        "url": "http://demosite.ondemand.flumotion.com/demosite/ondemand/mp4/pajaro_low.mp4",
-        "mimetype": "video/mp4"
-      }
-    ]
+    "name": "oops-20120802 (DASH)",
+    "likes": 999,
+    "duration": 242,
+    "thumbnail_url": "fixtures/thumb3.png",
+    "manifest": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/oops-20120802-manifest.mpd"
   },
   {
     "id": "4",
-    "name": "Blender trailer (MP4)",
-    "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
-    "type": "video",
-    "duration": "52",
-    "total_rates": "999",
-    "created_on": "2013-10-08 10:57:52",
-    "poster": "http://media.w3.org/2010/05/sintel/poster.png",
-    "streams": [
-      {
-        "url": "http://media.w3.org/2010/05/sintel/trailer.mp4",
-        "mimetype": "video/mp4"
-      }
-    ]
-  },
-  {
-    "id": "5",
-    "name": "train_1500 (MP3)",
-    "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
-    "type": "audio",
-    "duration": "300",
-    "total_rates": "999",
-    "created_on": "2013-10-08 10:57:52",
-    "streams": [
-      {
-        "url": "http://mediapm.edgesuite.net/osmf/content/test/train_1500.mp3",
-        "mimetype": "audio/mp3"
-      }
-    ]
+    "name": "motion-20120802 (DASH)",
+    "likes": 999,
+    "duration": 112,
+    "thumbnail_url": "fixtures/thumb4.png",
+    "manifest": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/motion-20120802-manifest.mpd"
   }
 ]
