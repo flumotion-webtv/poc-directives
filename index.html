@@ -34,22 +34,20 @@
         <li>Enable <strong>SEO</strong> with <a
             href="https://developers.google.com/webmasters/ajax-crawling/docs/specification?csw=1"
             target="_blank">AJAX crawling</a>.</li>
+        <li>No iFrames required.</li>
         <li><strong>Communication</strong> between directives on a transparent way.</li>
         <li>Manage <strong>different players</strong> with the same wrapper.</li>
         <li><a href="http://dashif.org/mpeg-dash/" target="_blank">MPEG-DASH</a> support.</li>
-        <li>No iFrames required.</li>
-        <li>No code changes on client's site to use a new release.</li>
         <li>Markup externalized as templates, so you can <strong>customize</strong> directive's markup at will.</li>
       </ul>
     </p>
-    <h3 class="page-header">Code to embed a DASH player and playlist using default configurations:</h3>
+    <h3 class="page-header">To embed a DASH player synchronized with a playlist is as simple as:</h3>
     <pre class="ng-scope"><code class="lang-html"><span class="com">&lt;!-- Player wrapper --&gt;</span>
-<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">fmt-player-dash</span><span class="tag">&gt;&lt;/div&gt;</span>
-<span class="com">&lt;!-- Playlist synchronized with player and social sharing --&gt;</span>
-<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">fmt-playlist</span> <span class="atn">content</span><span
-          class="pun">=</span><span class="atv">"http://flumotion-webtv.github.io/poc-directives/fixtures/playlist.json"</span><span class="tag">&gt;&lt;/div&gt;</span>
+<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">fmt-player-dash</span> <span class="atn">seo-enabled</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;&lt;/div&gt;</span>
+<span class="com">&lt;!-- Playlist synchronized with player --&gt;</span>
+<span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">fmt-playlist</span> <span class="atn">content</span><span class="pun">=</span><span class="atv">"http://flumotion-webtv.github.io/poc-directives/fixtures/playlist.json"</span><span class="tag">&gt;&lt;/div&gt;</span>
 
-<span class="com">&lt;!-- Initialize AngularJS and directives bootstrap --&gt;</span>
+<span class="com">&lt;!-- Initialize AngularJS and directives bootstrapper --&gt;</span>
 <span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
 <span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://flumotion-webtv.github.io/poc-directives/fmt-tpls.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span></code></pre>
     <br>
@@ -57,7 +55,6 @@
       <div class="col-md-6">
         <div fmt-player-dash
              seo-enabled="true"
-             stats-enabled="false"
              style="height: 300px; margin-bottom: 20px;"></div>
       </div>
       <div class="col-md-6">
